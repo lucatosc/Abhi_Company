@@ -39,8 +39,7 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""} >
         <Container>
           <Navbar.Brand href="/">
-            {/* <img src={logo} alt="Logo" /> */}
-            <h4 style={logoStyle}>Your Logo</h4>
+            <img src="/Logo.png" alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -48,23 +47,9 @@ export const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-              <Nav.Link href="#project" className={activeLink === 'project' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('project')}>Projects</Nav.Link>
+              <Nav.Link href="#sevices" className={activeLink === 'sevices' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('sevices')}>Sevices</Nav.Link>
+              <Nav.Link href="#contact_us" className={activeLink === 'contact_us' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact_us')}>Contact us</Nav.Link>
             </Nav>
-            <span className="navbar-text">
-              <div className="social-icon">
-                <a href="https://www.linkedin.com/"><LinkedIn className="icon" /></a>
-                <a href="https://www.facebook.com/"><Facebook className="icon" /></a>
-                <a href="https://www.instagram.com/"><Instagram className="icon" /></a>
-              </div>
-              {/* <Toggle /> */}
-              {/* Alternate Let's connect Button */}
-              {/* <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink> */}
-              {/* Resume View button */}
-              <button className="vvd" onClick={() => window.open(Resume)} ><span>View Resume</span></button>
-            </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>{/*Navbar End*/}
