@@ -1,8 +1,14 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import proj1_dash from "../assets/img/project1-dash.png";
+import proj2_dash from "../assets/img/project2-dash.png";
+import proj3_dash from "../assets/img/project3-dash.png";
+import proj4_dash from "../assets/img/project4-dash.png";
+import proj5_dash from "../assets/img/project5-dash.png";
+import proj6_dash from "../assets/img/project6-dash.png";
+import proj1_app from "../assets/img/project1-app.png";
+import proj2_app from "../assets/img/project2-app.gif";
+import proj3_app from "../assets/img/project3-app.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,52 +17,52 @@ export const Projects = () => {
 
   const dash_projects = [
     {
-      title: "Business Startup",
+      title: "Ecommerce Dashboard",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: proj1_dash,
     },
     {
-      title: "Business Startup",
+      title: "Wealth Dashboard",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: proj2_dash,
     },
     {
-      title: "Business Startup",
+      title: "Weather Dashboard",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: proj3_dash,
     },
     {
-      title: "Business Startup",
+      title: "Shop Dashboard",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: proj4_dash,
     },
     {
-      title: "Business Startup",
+      title: "Finance Dashboard",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: proj5_dash,
     },
     {
-      title: "Business Startup",
+      title: "Ecommerce Dashboard",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: proj6_dash,
     },
   ];
 
   const app_projects = [
     {
-      title: "Business Startup",
+      title: "Architecture App",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: proj1_app,
     },
     {
-      title: "Business Startup",
+      title: "Business App",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: proj2_app,
     },
     {
-      title: "Business Startup",
+      title: "Ecommerce App",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: proj3_app,
     },
   ];
 
