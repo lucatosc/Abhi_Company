@@ -11,36 +11,30 @@ export const Contact = () => {
     firstName: '',
     lastName: '',
     email: '',
-    phone: '',
+    title: '',
     message: ''
-  }
-
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
   }
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    
 
-    emailjs.sendForm('service_vzn11uh','template_2c7cjyg',form.current,'0Kgm2XmCCcgAS-PIx')
-    .then((result) => {
-      console.log(result.text);
-    }, (error) => {
-      console.log(error.text);
-    });
+    // emailjs.sendForm('service_vzn11uh','template_2c7cjyg',form.current,'0Kgm2XmCCcgAS-PIx')
+    // .then((result) => {
+    //   console.log(result.text);
+    // }, (error) => {
+    //   console.log(error.text);
+    // });
     setButtonText("Sent...");
+    setTimeout(() => {
+      setButtonText("Send");
+      setFormDetails(formInitialDetails);
+    }, 1500);
   };
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send');
-  const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
       setFormDetails({
@@ -84,7 +78,7 @@ export const Contact = () => {
                       <input type="text" name="first_name" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" name="last_name" value={formDetails.lasttName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
+                      <input type="text" name="last_name" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
                       <input type="email" name='email' value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
@@ -94,14 +88,8 @@ export const Contact = () => {
                     </Col>
                     <Col size={12} className="px-1">
                       <textarea name="message" rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <button type="submit"><span>{buttonText}</span></button>
+                      <div className='flex justify-center'><button type="submit"><span>{buttonText}</span></button></div>
                     </Col>
-                    {
-                      status.message &&
-                      <Col>
-                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                      </Col>
-                    }
                   </Row>
                 </form>
               </div>}
@@ -133,7 +121,7 @@ export const Contact = () => {
                     width="100%"
                     height="500px"
                     title="map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62217.443499287576!2d77.56961776313786!3d12.934038420296405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15c87627a8e9%3A0x895356f8182066d!2sNewton%20School!5e0!3m2!1sen!2sin!4v1674068898024!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.580365626843!2d77.31747791406499!3d28.6710121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbdaf48eccd1%3A0x7862a8305904e99!2sAyam%20Tech!5e0!3m2!1sen!2sin!4v1631393651379!5m2!1sen!2sin"
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>

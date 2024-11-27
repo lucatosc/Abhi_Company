@@ -1,5 +1,4 @@
 export const Skills = () => {
-
   return (
     <div className="px-5 h-auto flex text-gray-700">
         <div className="w-1/2  bg-[#ed7d31]">

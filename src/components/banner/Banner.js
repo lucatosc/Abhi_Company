@@ -66,9 +66,9 @@ export const Banner = () => {
                 {/* animated text */}
                 <h1>{`STARTUP APP DEVELOPMENT`}</h1>
                 <h4 className="text-[#ed7d31]">{`Your One Stop Shop for your app needs...!!`}</h4>
-                <div className="flex">
-                  <button className="pr-12" onClick={() => console.log('servies')}> OUR SERVICES <ArrowRightCircle size={25} /></button>
-                  <button onClick={() => console.log('connect')}> WHATSAPP US <ArrowRightCircle size={25} /></button>
+                <div className="flex pt-10">
+                  <a className="pr-12 no-underline flex" href="#project"> <p className="pr-3">OUR SERVICES</p> <ArrowRightCircle size={25} /></a>
+                  <a className="no-underline flex" href="https://www.whatsapp.com/"> <p className="pr-3">WHATSAPP US</p> <ArrowRightCircle size={25} /></a>
                 </div>
               </div>}
             </TrackVisibility>
