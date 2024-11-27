@@ -5,7 +5,6 @@ import { Banner } from "./components/banner/Banner";
 import { Skills } from "./components/skills/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
-import { Footer } from "./components/footer/Footer";
 import { keepTheme} from "./utils/themes";
 import { useEffect } from 'react';
 
@@ -17,12 +16,11 @@ function App() {
   
   return (
     <div className="App" >
-            <NavBar />
-            <Banner />
-            <Skills />
-            <Projects />
-            <Contact />
-            <Footer />
+      <NavBar />
+      <Banner />
+      <Skills />
+      <Projects />
+      <Contact />
     </div>
   );
 }
