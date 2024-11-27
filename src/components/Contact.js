@@ -81,7 +81,7 @@ export const Contact = () => {
                       <input type="text" name="last_name" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="email" name='email' value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
+                      <input type="email" name='email' value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} required/>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
                       <input type="text" name='title' value={formDetails.title} placeholder="Title" onChange={(e) => onFormUpdate('title', e.target.value)}/>
