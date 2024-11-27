@@ -5,7 +5,6 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import emailjs from '@emailjs/browser';
 
-
 export const Contact = () => {
   const formInitialDetails = {
     firstName: '',
@@ -20,13 +19,15 @@ export const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // emailjs.sendForm('service_vzn11uh','template_2c7cjyg',form.current,'0Kgm2XmCCcgAS-PIx')
-    // .then((result) => {
-    //   console.log(result.text);
-    // }, (error) => {
-    //   console.log(error.text);
-    // });
+    emailjs.sendForm('service_062an3b','template_iflgw1i',form.current, 'X8HS8tH56WO2eOnLW')
+    .then((result) => {
+      console.log(result.text);
+    }, (error) => {
+      console.log(error.text);
+    });
+    
     setButtonText("Sent...");
+
     setTimeout(() => {
       setButtonText("Send");
       setFormDetails(formInitialDetails);
@@ -42,7 +43,6 @@ export const Contact = () => {
         [category]: value
       })
   }
-
 
   return (
     <section className="contact" id="connect">
