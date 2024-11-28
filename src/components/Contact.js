@@ -56,20 +56,16 @@ export const Contact = () => {
                 <div className='pb-4 flex justify-center'>
                   <h2>Make an appointment</h2>
                 </div>
-                <div>
-                  <h4 className='pb-3'>OUR LOCATION</h4>
-                  <p>New York, NY 1016, United States.</p> 
-                </div>
                 <Row>
                   <Col size={12} md={6}>
-                    <h4 className='pb-3'>OPENING HOURS</h4>
-                    <p>Mon-Fri: 6am~10pm</p>
-                    <p>Sat-Sun: 8am-2pm</p>
+                  <h4 className='pb-3'>OUR LOCATION</h4>
+                  <p>B-174, Block B, Vivek Vihar, Delhi, 110095</p>
                   </Col>
                   <Col size={12} md={6}>
                     <h4 className='pb-3'>CONTACT</h4>
-                    <p>Phone: +1 234 456 7890</p>
-                    <p>Email: mail@example.com</p>
+                    <p>+91 956447688</p>
+                    <p>+974 55625234</p>
+                    <p>info@ayamtechs.com</p>
                   </Col>
                 </Row>
                 <form ref={form} onSubmit={sendEmail}>

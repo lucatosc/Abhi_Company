@@ -4,7 +4,7 @@ import TrackVisibility from 'react-on-screen';
 import RotatingGlobe from "../../assets/img/RotatingEarth.gif";
 import '../../App.css'
 import './GlitchEffect.css'
-
+import { FlipWords } from '../../utils/FlipWords';
 
 export const Banner = () => {
   return (
@@ -16,7 +16,13 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 {/* animated text */}
-                <h1>{`STARTUP APP DEVELOPMENT`}</h1>
+                {/* <h1>{`STARTUP APP DEVELOPMENT`}</h1> */}
+                <h1>STARTUP</h1>
+                <h1><FlipWords
+                  words={["APP", "DASHBOARD"]}
+                  className="text-[#ed7d31]"
+                /></h1>
+                <h1>DEVELOPMENT</h1>
                 <h4 className="text-[#ed7d31]">{`Your One Stop Shop for your app needs...!!`}</h4>
                 <div className="flex pt-10">
                   <a className="pr-12 no-underline flex" href="#project"> <p className="pr-3">OUR SERVICES</p> <ArrowRightCircle size={25} /></a>
