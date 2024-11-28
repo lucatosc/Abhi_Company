@@ -18,32 +18,36 @@ export const Projects = () => {
   const dash_projects = [
     {
       title: "Ecommerce Dashboard",
-      description: "Design & Development",
+      description: `The eCommerce dashboard provides a comprehensive overview of key performance metrics, including sales trends, customer behavior, inventory levels, and conversion rates, enabling data-driven decision-making for optimizing online retail strategies.`,
       imgUrl: proj1_dash,
     },
     {
       title: "Wealth Dashboard",
-      description: "Design & Development",
+      description: `A wealth dashboard provides a comprehensive, real-time overview of your financial status, including assets, liabilities, investments, and cash flow, allowing you to make informed decisions about your financial future.
+
+`,
       imgUrl: proj2_dash,
     },
     {
       title: "Weather Dashboard",
-      description: "Design & Development",
+      description: `A weather dashboard provides real-time updates and visualizations of current weather conditions, forecasts, and severe alerts for a specific location or region.
+
+`,
       imgUrl: proj3_dash,
     },
     {
       title: "Shop Dashboard",
-      description: "Design & Development",
+      description: `Monitor your shop’s performance with real-time insights on sales, inventory, customer engagement, and trends, all in one intuitive dashboard.`,
       imgUrl: proj4_dash,
     },
     {
       title: "Finance Dashboard",
-      description: "Design & Development",
+      description: `A finance dashboard provides a comprehensive, real-time overview of key financial metrics and performance indicators, enabling informed decision-making and strategic planning for businesses.`,
       imgUrl: proj5_dash,
     },
     {
       title: "Ecommerce Dashboard",
-      description: "Design & Development",
+      description: `An eCommerce dashboard provides a comprehensive overview of key metrics, including sales performance, customer engagement, inventory levels, and traffic sources, enabling businesses to make data-driven decisions for growth.`,
       imgUrl: proj6_dash,
     },
   ];
@@ -51,17 +55,17 @@ export const Projects = () => {
   const app_projects = [
     {
       title: "Architecture App",
-      description: "Design & Development",
+      description: `Explore, design, and visualize your architectural dreams with our intuitive architecture app, featuring cutting-edge tools for sketching, 3D modeling, and project collaboration.`,
       imgUrl: proj1_app,
     },
     {
       title: "Business App",
-      description: "Design & Development",
+      description: `Streamline your operations and enhance productivity with our all-in-one business app designed for seamless collaboration, project management, and real-time analytics.`,
       imgUrl: proj2_app,
     },
     {
       title: "Ecommerce App",
-      description: "Design & Development",
+      description: `Discover a seamless shopping experience with our intuitive eCommerce app, featuring a vast selection of products, secure payment options, and personalized recommendations just for you`,
       imgUrl: proj3_app,
     },
   ];
