@@ -71,17 +71,17 @@ export const Contact = () => {
               <h2>ABOUT US</h2>
             </div>
             <Row>
-              <Col size={12} xs={5}>
+              <Col size={12} xs={6}>
                 <div className='pb-3 flex'><div className='w-8 h-8'><img src='/location.png' alt='location'/></div><h4>OUR LOCATION</h4></div>
                 <p>B174</p>    
                 <p>Vivek Vihar Ph 1</p>    
                 <p>Delhi</p>    
                 <p>India-110095</p>    
               </Col>
-              <Col size={12} xs={7}>
+              <Col size={12} xs={6}>
                 <div className='pb-3 flex'><div className='w-8 h-8'><img src='/contact.png' alt='contact'/></div><h4>CONTACT US</h4></div>
-                <a href='http://www.ayamtechs.com/' className='no-underline text-white'>www.ayamtechs.com</a>
-                <p className='pt-3'>info@ayamtechs.com</p>
+                <a href='http://www.ayamtechs.com/' className='no-underline text-white email_block'><div>www.ayamtechs.</div><div>com</div></a>
+                <p className='pt-3 email_block'><div>info@ayamtechs.</div><div>com</div></p>
                 <p>+91 956447688</p>
                 <p>+974 55625234</p>
               </Col>
