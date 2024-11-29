@@ -38,10 +38,15 @@ export const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
+            <Nav className="flex items-center justify-end ms-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#project" className={activeLink === 'project' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('project')}>Sevices</Nav.Link>
               <Nav.Link href="#connect" className={activeLink === 'connect' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('connect')}>Contact Us</Nav.Link>
+              <Nav.Link href="https://wa.me/+97455625234?text=" className='active navbar-link' target="_blank">
+                <div className="w-16 h-16 flex items-center">
+                  <img src="/whatsapp.png" alt="Whatsapp" />
+                </div>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

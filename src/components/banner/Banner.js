@@ -26,7 +26,7 @@ export const Banner = () => {
                 <h4 className="text-[#ed7d31]">{`Your One Stop Shop for your app needs...!!`}</h4>
                 <div className="flex pt-10">
                   <a className="pr-12 no-underline flex" href="#project"> <p className="pr-3">OUR SERVICES</p> <ArrowRightCircle size={25} /></a>
-                  <a className="no-underline flex" href="https://www.whatsapp.com/"> <p className="pr-3">WHATSAPP US</p> <ArrowRightCircle size={25} /></a>
+                  <a className="no-underline flex" href="https://wa.me/+97455625234?text=" target="_blank" rel="noreferrer"> <p className="pr-3">WHATSAPP US</p> <ArrowRightCircle size={25} /></a>
                 </div>
               </div>}
             </TrackVisibility>
