@@ -1,9 +1,9 @@
 export const Skills = () => {
   return (
-    <div className="px-5 h-auto flex text-gray-700">
-        <div className="w-1/2  bg-[#ed7d31]">
+    <div className="px-5 h-auto flex text-gray-700 rounded-2xl">
+        <div className="w-1/2  bg-[#ed7d31] rounded-l-2xl">
           <div className="m-4">
-            <h3 className="pb-2">Build Your Dream App</h3>
+            <h3 className="pb-2">Build Your Dream App and Dashboards</h3>
             <h2>25 Years Of Undefeated Success</h2>
           </div>
         </div>
@@ -13,7 +13,7 @@ export const Skills = () => {
             <h6>Successful project</h6>
           </div>
         </div>
-        <div className="w-1/4  bg-white">
+        <div className="w-1/4  bg-white rounded-r-2xl">
           <div className="m-4">
             <h2 className="pb-2">6+</h2>
             <h6>Years of experience</h6>

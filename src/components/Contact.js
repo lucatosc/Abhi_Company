@@ -7,10 +7,9 @@ import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
   const formInitialDetails = {
-    firstName: '',
-    lastName: '',
+    name: '',
     email: '',
-    title: '',
+    subject: '',
     message: ''
   }
 
@@ -47,51 +46,35 @@ export const Contact = () => {
   return (
     <section className="contact" id="connect">
       <Container>
-        <Row className="align-items-center">
-          <Col size={12} md={6}>
+        <Row className="align-items-center h-[750px]">
+          <Col size={12} md={6} className='h-[750px] items-stretch'>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h4>WHAT ARE YOU WAITING FOR...</h4>
                 <div className='pb-4 flex justify-center'>
-                  <h2>Make an appointment</h2>
+                  <h2>CONTACT US</h2>
                 </div>
-                <Row>
-                  <Col size={12} md={6}>
-                  <h4 className='pb-3'>OUR LOCATION</h4>
-                  <p>B-174, Block B, Vivek Vihar, Delhi, 110095</p>
-                  </Col>
-                  <Col size={12} md={6}>
-                    <h4 className='pb-3'>CONTACT</h4>
-                    <p>+91 956447688</p>
-                    <p>+974 55625234</p>
-                    <p>info@ayamtechs.com</p>
-                  </Col>
-                </Row>
                 <form ref={form} onSubmit={sendEmail}>
                   <Row>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="text" name="first_name" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="text" name="last_name" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="email" name='email' value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} required/>
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="text" name='title' value={formDetails.title} placeholder="Title" onChange={(e) => onFormUpdate('title', e.target.value)}/>
-                    </Col>
-                    <Col size={12} className="px-1">
-                      <textarea name="message" rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <div className='flex justify-center'><button type="submit"><span>{buttonText}</span></button></div>
-                    </Col>
+                    {/* <Col size={12} sm={12}> */}
+                      <input className='my-3' type="text" name="name" value={formDetails.name} placeholder="Enter your name" onChange={(e) => onFormUpdate('name', e.target.value)} />
+                    {/* </Col> */}
+                    {/* <Col size={12} sm={12}> */}
+                      <input className='my-3' type="email" name='email' value={formDetails.email} placeholder="Enter your email address" onChange={(e) => onFormUpdate('email', e.target.value)} required/>
+                    {/* </Col> */}
+                    {/* <Col size={12} sm={12}> */}
+                      <input className='my-3' type="text" name='subject' value={formDetails.subject} placeholder="Subject" onChange={(e) => onFormUpdate('subject', e.target.value)}/>
+                    {/* </Col> */}
+                    {/* <Col size={12} sm={12}> */}
+                      <textarea className='my-3' name="message" rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+                      <div className='flex justify-center my-3'><button type="submit"><span>{buttonText}</span></button></div>
+                    {/* </Col> */}
                   </Row>
                 </form>
               </div>}
             </TrackVisibility>
           </Col>
-          <Col size={12} md={6}>
+          <Col size={12} md={6} className='h-[750px] items-stretch'>
             <div className='pb-4 flex justify-center'>
               <h2>ABOUT US</h2>
             </div>
@@ -117,7 +100,7 @@ export const Contact = () => {
                     width="100%"
                     height="500px"
                     title="map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.580365626843!2d77.31747791406499!3d28.6710121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbdaf48eccd1%3A0x7862a8305904e99!2sAyam%20Tech!5e0!3m2!1sen!2sin!4v1631393651379!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.6227588374672!2d77.31709117617326!3d28.6710120756438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbdaf48eccd1%3A0x7862a8305904e99!2sAyam%20Tech!5e0!3m2!1sen!2sqa!4v1732886410616!5m2!1sen!2sqa"
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>

@@ -23,6 +23,7 @@
   --dark-text: #292929;
   --light-text: #fff;
   --dark-background: #132e65;
+  --dark-button-color: #ed7d31;
   --light-background: #586F7C;
   --accent: #B8DBD9;
   --button-border: #B8DBD9;
@@ -34,8 +35,9 @@
 
 .theme-light {
   --dark-text: #121212;
-  --light-text: #5E4B56;
+  --light-text: #36222e;
   --dark-background: #90baba;
+  --dark-button-color: #803808;
   --light-background: #EDDCD2;
   --accent: #DBE7E4;
   --button-border: #5E4B56;
@@ -551,11 +553,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button {
   font-weight: 700;
   color: var(--dark-background);
-  background-color: var(--light-text);
+  background-color: var(--dark-button-color);
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
-  border-radius: 0;
+  border-radius: 16px;
   position: relative;
   transition: 0.3s ease-in-out;
 }
