@@ -81,7 +81,7 @@ export const Projects = () => {
                 <h4>Build Your Dream</h4>
                 <h2 className="pb-5">Quality Services</h2>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center max-md:flex-col" id="pills-tab">
                     <Nav.Item>
                       <Nav.Link eventKey="first">ALL</Nav.Link>
                     </Nav.Item>

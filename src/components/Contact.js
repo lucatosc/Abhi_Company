@@ -56,37 +56,29 @@ export const Contact = () => {
                 </div>
                 <form ref={form} onSubmit={sendEmail}>
                   <Row>
-                    {/* <Col size={12} sm={12}> */}
-                      <input className='my-3' type="text" name="name" value={formDetails.name} placeholder="Enter your name" onChange={(e) => onFormUpdate('name', e.target.value)} />
-                    {/* </Col> */}
-                    {/* <Col size={12} sm={12}> */}
-                      <input className='my-3' type="email" name='email' value={formDetails.email} placeholder="Enter your email address" onChange={(e) => onFormUpdate('email', e.target.value)} required/>
-                    {/* </Col> */}
-                    {/* <Col size={12} sm={12}> */}
-                      <input className='my-3' type="text" name='subject' value={formDetails.subject} placeholder="Subject" onChange={(e) => onFormUpdate('subject', e.target.value)}/>
-                    {/* </Col> */}
-                    {/* <Col size={12} sm={12}> */}
-                      <textarea className='my-3' name="message" rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <div className='flex justify-center my-3'><button type="submit"><span>{buttonText}</span></button></div>
-                    {/* </Col> */}
+                    <input className='my-3' type="text" name="name" value={formDetails.name} placeholder="Enter your name" onChange={(e) => onFormUpdate('name', e.target.value)} />
+                    <input className='my-3' type="email" name='email' value={formDetails.email} placeholder="Enter your email address" onChange={(e) => onFormUpdate('email', e.target.value)} required/>
+                    <input className='my-3' type="text" name='subject' value={formDetails.subject} placeholder="Subject" onChange={(e) => onFormUpdate('subject', e.target.value)}/>
+                    <textarea className='my-3' name="message" rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+                    <div className='flex justify-center'><button type="submit"><span>{buttonText}</span></button></div>
                   </Row>
                 </form>
               </div>}
             </TrackVisibility>
           </Col>
-          <Col size={12} md={6} className='h-[750px] items-stretch'>
+          <Col size={12} md={6} className='h-[750px] items-stretch pt-20'>
             <div className='pb-4 flex justify-center'>
               <h2>ABOUT US</h2>
             </div>
             <Row>
-              <Col size={12} md={8}>
+              <Col size={12} xs={6}>
                 <h4 className='pb-3'>OUR LOCATION  </h4>
                 <p>B174</p>    
                 <p>Vivek Vihar Ph 1</p>    
                 <p>Delhi</p>    
                 <p>India-110095</p>    
               </Col>
-              <Col size={12} md={4}>
+              <Col size={12} xs={6}>
                 <h4 className='pb-3'>Contact</h4>
                 <p>www.ayamtechs.com</p>
                 <p>info@ayamtechs.com</p>
@@ -102,7 +94,6 @@ export const Contact = () => {
                     title="map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.6227588374672!2d77.31709117617326!3d28.6710120756438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbdaf48eccd1%3A0x7862a8305904e99!2sAyam%20Tech!5e0!3m2!1sen!2sqa!4v1732886410616!5m2!1sen!2sqa"
                     loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
               }
             </TrackVisibility>
