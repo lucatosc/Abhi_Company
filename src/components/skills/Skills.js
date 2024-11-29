@@ -7,7 +7,7 @@ export const Skills = () => {
             <h2>25 Years Of Undefeated Success</h2>
           </div>
         </div>
-        <div className="w-1/4 max-md:w-full bg-white border-r-2 bormax-md:der-b-2 border-gray-200">
+        <div className="w-1/4 max-md:w-full bg-white min-[768px]:border-r-2 max-md:border-b-2 border-gray-200">
           <div className="p-4">
             <h2 className="pb-2">20+</h2>
             <h6>Successful project</h6>
