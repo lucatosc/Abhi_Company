@@ -46,7 +46,7 @@ export const Contact = () => {
   return (
     <section className="contact" id="connect">
       <Container>
-        <Row className="align-items-center h-[750px]">
+        <Row className="align-items-center">
           <Col size={12} md={6} className='h-[750px] items-stretch'>
             <TrackVisibility>
               {({ isVisible }) =>
@@ -66,22 +66,22 @@ export const Contact = () => {
               </div>}
             </TrackVisibility>
           </Col>
-          <Col size={12} md={6} className='h-[750px] items-stretch pt-20'>
+          <Col size={12} md={6} className='h-[750px] items-stretch'>
             <div className='pb-4 flex justify-center'>
               <h2>ABOUT US</h2>
             </div>
             <Row>
-              <Col size={12} xs={6}>
-                <h4 className='pb-3'>OUR LOCATION  </h4>
+              <Col size={12} xs={5}>
+                <div className='pb-3 flex'><div className='w-8 h-8'><img src='/location.png' alt='location'/></div><h4>OUR LOCATION</h4></div>
                 <p>B174</p>    
                 <p>Vivek Vihar Ph 1</p>    
                 <p>Delhi</p>    
                 <p>India-110095</p>    
               </Col>
-              <Col size={12} xs={6}>
-                <h4 className='pb-3'>Contact</h4>
-                <p>www.ayamtechs.com</p>
-                <p>info@ayamtechs.com</p>
+              <Col size={12} xs={7}>
+                <div className='pb-3 flex'><div className='w-8 h-8'><img src='/contact.png' alt='contact'/></div><h4>CONTACT US</h4></div>
+                <a href='http://www.ayamtechs.com/' className='no-underline text-white'>www.ayamtechs.com</a>
+                <p className='pt-3'>info@ayamtechs.com</p>
                 <p>+91 956447688</p>
                 <p>+974 55625234</p>
               </Col>
