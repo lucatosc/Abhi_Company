@@ -10,7 +10,7 @@ function Toggle() {
 
     const changeThemeAndToggle = () => {
       if (localStorage.getItem('theme') === 'theme-dark') {
-        setTheme('theme-light')
+        setTheme('theme-dark')
         setActive(true)
         setAriaActive(false)
       } else {
