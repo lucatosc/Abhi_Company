@@ -59,7 +59,7 @@ export const Contact = () => {
                     <input className='my-3' type="text" name="name" value={formDetails.name} placeholder="Enter your name" onChange={(e) => onFormUpdate('name', e.target.value)} />
                     <input className='my-3' type="email" name='email' value={formDetails.email} placeholder="Enter your email address" onChange={(e) => onFormUpdate('email', e.target.value)} required/>
                     <input className='my-3' type="text" name='subject' value={formDetails.subject} placeholder="Subject" onChange={(e) => onFormUpdate('subject', e.target.value)}/>
-                    <textarea className='my-3' name="message" rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+                    <textarea className='my-3' name="message" rows="6" value={formDetails.message} placeholder="Thank you. Someone will revert to your message soon." onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
                     <div className='flex justify-center'><button type="submit"><span>{buttonText}</span></button></div>
                   </Row>
                 </form>
@@ -72,18 +72,22 @@ export const Contact = () => {
             </div>
             <Row>
               <Col size={12} xs={6}>
-                <div className='pb-3 flex'><div className='w-8 h-8'><img src='/location.png' alt='location'/></div><h4>OUR LOCATION</h4></div>
-                <p>B174</p>    
-                <p>Vivek Vihar Ph 1</p>    
-                <p>Delhi</p>    
-                <p>India-110095</p>    
+                <div>
+                  <div className='pb-1 flex'><div className='w-8 h-8'><img src='/location.png' alt='location'/></div><h4>OUR LOCATION</h4></div>
+                  <p className='mb-1'>B174</p>    
+                  <p className='mb-1'>Vivek Vihar Ph 1</p>    
+                  <p className='mb-1'>Delhi</p>    
+                  <p className='mb-1'>India-110095</p>
+                </div>
               </Col>
-              <Col size={12} xs={6}>
-                <div className='pb-3 flex'><div className='w-8 h-8'><img src='/contact.png' alt='contact'/></div><h4>CONTACT US</h4></div>
-                <a href='http://www.ayamtechs.com/' className='no-underline text-white email_block'><div>www.ayamtechs.</div><div>com</div></a>
-                <p className='pt-3 email_block'><div>info@ayamtechs.</div><div>com</div></p>
-                <p>+91 956447688</p>
-                <p>+974 55625234</p>
+              <Col size={12} xs={6} className='flex justify-end'>
+                <div>
+                  <div className='pb-1 flex'><div className='w-8 h-8'><img src='/contact.png' alt='contact'/></div><h4>CONTACT US</h4></div>
+                  <a href='http://www.ayamtechs.com/' className='no-underline text-white email_block'>www.ayamtechs.com</a>
+                  <p className='mb-1 pt-1 email_block'>info@ayamtechs.com</p>
+                  <p className='mb-1'>+91 956447688</p>
+                  <p className='mb-1'>+974 55625234</p>
+                </div>
               </Col>
             </Row>
             <TrackVisibility>
@@ -100,6 +104,7 @@ export const Contact = () => {
           </Col>
         </Row>
       </Container>
+      <div className='max-sm:block flex justify-center pt-5'><div className='flex justify-center'><h5>© 2024 Ayam Tech India Pvt Ltd., </h5></div><div className='flex justify-center'><h5>Delhi, India.</h5></div></div>
     </section>
   )
 }

@@ -611,7 +611,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 @media (max-width:360px) {
 	.email_block {
-		display: block;
+    font-size: 14px;
+		/* display: block; */
 	}
 }
 

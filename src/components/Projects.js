@@ -78,8 +78,7 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h4>Build Your Dream</h4>
-                <h2 className="pb-5">Quality Services</h2>
+                <h2 className="pb-5">Services</h2>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center max-md:flex-col" id="pills-tab">
                     <Nav.Item>
@@ -98,7 +97,7 @@ export const Projects = () => {
                         {
                           dash_projects.map((project, index) => {
                             return (
-                              <ProjectCard
+                              index < 3 && <ProjectCard
                                 key={index}
                                 {...project}
                                 />
@@ -108,7 +107,7 @@ export const Projects = () => {
                         {
                           app_projects.map((project, index) => {
                             return (
-                              <ProjectCard
+                              index < 3 && <ProjectCard
                                 key={index}
                                 {...project}
                                 />
