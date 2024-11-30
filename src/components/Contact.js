@@ -104,7 +104,7 @@ export const Contact = () => {
           </Col>
         </Row>
       </Container>
-      <div className='max-sm:block flex justify-center pt-5'><div className='flex justify-center'><h5>© 2024 Ayam Tech India Pvt Ltd., </h5></div><div className='flex justify-center'><h5>Delhi, India.</h5></div></div>
+      <div className='max-sm:block flex justify-center pt-32'><div className='flex justify-center'><h5>© 2024 Ayam Tech India Pvt Ltd., </h5></div><div className='flex justify-center'><h5>Delhi, India.</h5></div></div>
     </section>
   )
 }
