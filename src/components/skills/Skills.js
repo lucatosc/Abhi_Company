@@ -6,7 +6,7 @@ export const Skills = () => {
             <h3 className="pb-2">Build Your Dream App and Dashboards</h3>
           </div>
         </div>
-        <div className="w-1/4 max-md:w-full bg-white min-[768px]:border-r-2 max-md:border-b-2 border-gray-200">
+        <div className="w-1/4 max-md:w-full bg-white border-r-2 max-md:border-b-2 border-gray-200">
           <div className="p-4">
             <h2 className="pb-2">20+</h2>
             <h6>Successful project</h6>

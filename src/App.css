@@ -130,14 +130,14 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: var(--dark-background);
+  background-color: lightblue;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: var(--light-text) !important;
+  color: #132e65 !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -195,8 +195,8 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: var(--light-text);
-  border: 1px solid var(--light-text);
+  color: black;
+  border: 1px solid black;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -579,7 +579,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 25px;
   border-radius: 16px;
   position: relative;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .contact form button span {
   z-index: 1;
@@ -587,18 +587,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover {
   color: var(--light-text);
-  /* background-color: var(--light-text); */
+  background-color: #803808;
 }
 .contact form button::before {
   content: "";
-  background: var(--dark-background);
+  background: #803808;
   width: 0;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
-  transition: 0.3s ease-in-out;
+  border-radius: 16px;
+  transition: 0.5s ease-in-out;
 }
 
 .contact form button:hover::before {
@@ -609,7 +610,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex; 
 }
 
-@media (max-width:360px) {
+@media (max-width:420px) {
 	.email_block {
     font-size: 14px;
 		/* display: block; */

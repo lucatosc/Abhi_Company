@@ -5,15 +5,11 @@ import { BrowserRouter as Router } from "react-router-dom";
 export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(true);
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(true);
     }
 
     window.addEventListener("scroll", onScroll);
